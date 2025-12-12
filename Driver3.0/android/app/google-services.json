@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "949004985438",
+    "project_id": "helpme-2026",
+    "storage_bucket": "helpme-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949004985438:android:b4d377fc80d6ad773ac0cf",
+        "android_client_info": {
+          "package_name": "app.helpme.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoXLoBt6N-yDfY49ua8eotRqU_XcVmDCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949004985438:android:efef97b921b8b6d13ac0cf",
+        "android_client_info": {
+          "package_name": "app.helpme.rider"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoXLoBt6N-yDfY49ua8eotRqU_XcVmDCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

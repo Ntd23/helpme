@@ -1,0 +1,55 @@
+//buildscript {
+//    ext.kotlin_version = '1.9.20'
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:7.1.3'
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//        classpath 'com.google.gms:google-services:4.3.15'
+//    }
+//}
+
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+//        jcenter() // Thêm dòng này
+//        maven { // Thêm khối maven này
+//            url 'https://cardinalcommerce.jfrog.io/artifactory/android'
+//        }
+    }
+//    subprojects {
+//        afterEvaluate { project ->
+//            if (project.hasProperty('android')) {
+//                project.android {
+//                    if (namespace == null) {
+//                        namespace project.group
+//                    }
+//                }
+//            }
+//        }
+//    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+// TẮT WARNING DEPRECATED & UNCHECKED CỦA JAVAC CHO TOÀN BỘ SUBPROJECTS
+subprojects {
+    tasks.withType(JavaCompile).configureEach {
+        options.compilerArgs << "-Xlint:-deprecation" << "-Xlint:-unchecked"
+    }
+}
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+
+
