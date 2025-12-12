@@ -1,10 +1,10 @@
-# Mighty Taxi Rider 3.0 – Setup Guide (FVM + Flutter 3.22.3)
+# Mighty Taxi Driver 3.0 – Setup Guide (FVM + Flutter 3.22.3)
 
-Project này sử dụng **FVM (Flutter Version Manager)** để cố định version Flutter = `3.22.3`  
+Project này sử dụng **FVM (Flutter Version Manager)** để cố định version Flutter = `3.38.1`  
 → Ai pull về cũng dùng đúng SDK, tránh vỡ build do khác version.
 
 Thư mục Flutter app:  
-`MightyTaxiSourceCode/Rider3.0` (chính thư mục này có `pubspec.yaml`)
+`MightyTaxiSourceCode/Driver3.0` (chính thư mục này có `pubspec.yaml`)
 
 ---
 
@@ -23,8 +23,8 @@ dart pub global activate fvm
 # hoặc
 flutter pub global activate fvm
 Kiểm tra fvm đã cài đặt: fvm --version
-Nếu chưa cài Flutter v3.22.3: fvm install 3.22.3
-Gán Flutter v3.22.3 cho project này: fvm use 3.22.3
+Nếu chưa cài Flutter v3.38.1: fvm install 3.38.1
+Gán Flutter v3.38.1 cho project này: fvm use 3.38.1
 
 ## 3. Cài JDK 17
 Kiểm tra đã có JDK 17: 
