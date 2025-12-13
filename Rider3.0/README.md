@@ -49,3 +49,10 @@ fvm flutter pub get
 Vào File → Settings → Languages & Frameworks → Flutter
 Flutter SDK path: chọn ../root_project/.fvm/flutter_sdk
 Click Run
+
+
+
+Note:
+Nếu lỗi F:\android1\Android\Sdk\ndk\28.2.13676358 did not have a source.properties file -> tìm đến F:\android1\Android\Sdk\ndk\28.2.13676358, xoá 28.2.13676358
+Mở cmd: cd F:\android1\Android\Sdk\cmdline-tools\latest\bin
+sdkmanager --sdk_root=F:\android1\Android\Sdk --install "ndk;28.2.13676358"

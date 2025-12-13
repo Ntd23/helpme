@@ -17,11 +17,12 @@
 
 # FVM Version Cache
 .fvm/
+.fvmrc
 
 # Android
 /android/.gradle/
 /android/local.properties
-
+/android/build/
 
 # iOS
 ios/Pods/
